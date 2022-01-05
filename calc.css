@@ -1,0 +1,231 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.textcalc {
+  font-size: 32px;
+  color: white;
+  font-weight: bolder;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+  float: right;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #182034;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.resultbox {
+  height: 13vh;
+  margin-top: 8%;
+  border-radius: 12px;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 4vh;
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+}
+
+.buttonBox {
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10%;
+}
+
+.smallbtn {
+  width: 6rem;
+  height: 7vh;
+  margin: 7px;
+  margin-bottom: 9px;
+  border-radius: 8px;
+  background-color: #eae3db;
+  font-size: 26px;
+  font-weight: bold;
+  box-shadow: 0px 4px #afa49c;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > button {
+  margin: 10px;
+}
+
+.smallbtn {
+  color: #454756;
+}
+
+.redbtn,
+.bluebtn {
+  width: 13rem;
+}
+
+/*light theme */
+.allLight {
+  background-color: #e6e6e6;
+}
+
+.resultboxLight {
+  background-color: #eee;
+}
+
+.buttonBoxLight {
+  background-color: #d3cdcd;
+}
+
+.bluebtnLight {
+  background: #398087;
+  box-shadow: 0px 4px #1b5d65;
+}
+
+.bluebtnLight,
+.redbtnLight {
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.redbtnLight {
+  background: #c85401;
+  box-shadow: 0 4px #863700;
+}
+
+/* dark theme */
+.smallbtnLight {
+  background-color: blue;
+}
+.allDark {
+  background-color: hsl(222, 26%, 31%);
+}
+
+.resultboxDark {
+  background-color: hsl(224, 36%, 15%);
+  color: white;
+}
+
+.buttonBoxDark {
+  background-color: hsl(223, 31%, 20%);
+}
+
+.smallbtnDark {
+  color: #454756;
+}
+
+.bluebtnDark {
+  background: #647299;
+  box-shadow: 0px 4px #404e74;
+}
+
+.bluebtnDark,
+.redbtnDark {
+  outline: #d13f30;
+  border: none;
+  color: white;
+}
+
+.redbtnDark {
+  background: #d13f30;
+  box-shadow: 0 4px #92251a;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attributionco {
+  color: white;
+}
+
+.attributionLight {
+  color: #454756;
+}
